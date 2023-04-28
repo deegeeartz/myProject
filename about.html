@@ -10,10 +10,10 @@
 </head>
 
 <body id="about">
-    <header id="heading" class="headabout">
+    <header class="heading" class="headabout">
         <button class="hamburger"><p class="ham">=</p> </button>
         <h2><span>DEEQUONOTE</span> ENTREPRISE</h2>
-        <ul id="lister">
+        <ul class="lister">
             <li>
                 <a href="index.html"> Home</a></li>
             <li><a href="about.html" target="_blank" rel="noopener
@@ -28,7 +28,7 @@
             <div class="content1">
                 <h1>Who are we? </h1>
                 <p>
-                    <span id="firstp">DEEQUONOTE ENTERPRISE</span> is a leading web design firm with a passion for delivering creative and effective solutions to businesses and organizations. With a team of expert designers and developers, we specialize
+                    <span id="firstp">DEEQUONOTE ENTERPRISE</span> is a thriving web design firm with a passion for delivering creative and effective solutions to businesses and organizations. With a team of expert designers and developers, we specialize
                     in providing a wide range of professional web design services to help our clients achieve their online goals. Our extensive experience in the industry has given us the expertise to design and develop websites that not only look great,
                     but also meet the unique needs of our clients.
                     <br> We believe that great web design is more than just a visually appealing website. We take a holistic approach to web design, focusing on user experience, functionality, and business objectives. We work closely with our clients
@@ -55,8 +55,9 @@
                 <div id="imgcontent1">
                     <img src="picMost2.png" alt="">
                 </div>
-                <div id="resumeId"><a href="/Isah Dickson CV.pdf" download>See
-                            My Resume</a></div>
+                <div id="resumeId">
+                    <a href="/Isah Dickson CV.pdf" download class="resumeText">See My Resume</a>
+                </div>
                 <div id="imgcontent2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam nihil enim. Exercitationem laudantium eius minima provident illo expedita! Pariatur perferendis, eos assumenda placeat natus, dolor sed facilis dolorem similique laboriosam
                         blanditiis nesciunt soluta aspernatur voluptates id. Laboriosam, culpa incidunt.</p>
@@ -68,7 +69,37 @@
     <footer>
         <p>DEEQUONOTE ENTREPRISE©2022</p>
     </footer>
-    <script src="myPortfolio.js"></script>
+    <script>
+        const navButton = document.querySelector('.ham');
+        const navList = document.querySelector('.lister');
+        const resumeText = document.querySelector('.resumeText');
+        console.log(navButton.innerHTML);
+
+        navButton.addEventListener('click', () => {
+            if (navButton.innerHTML == "=") {
+
+                navList.style.display = "flex";
+                navList.style.transition = "0.2s ease-in-out";
+                navButton.innerHTML = "❌";
+                console.log("click")
+            } else {
+                navList.style.transition = "0.2s ease-in-out";
+                navList.style.display = "none";
+                navButton.innerHTML = "=";
+
+            }
+        })
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 550) {
+                resumeText.innerHTML = "My Resume";
+            } else if (window.innerWidth > 550) {
+                resumeText.innerHTML = "See My Resume";
+            }
+        })
+
+        console.log(window.innerWidth);
+    </script>
 </body>
 
 </html>

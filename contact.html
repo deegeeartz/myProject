@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header id="heading" class="headabout">
+    <header class="heading" class="headabout">
         <button class="hamburger"><p class="ham">=</p> </button>
         <h2><span>DEEQUONOTE</span> ENTREPRISE</h2>
-        <ul id="lister">
+        <ul class="lister">
             <li> <a href="index.html"> Home</a></li>
             <li><a href="about.html" target="_blank" rel="noopener
                         noreferrer">About</a></li>
@@ -64,7 +64,27 @@
     <footer>
         <p>DEEQUONOTE ENTREPRISE©2022</p>
     </footer>
-    <script src="myPortfolio.js"></script>
+    <!-- embeded javascript -->
+    <script>
+        const navButton = document.querySelector('.ham');
+        const navList = document.querySelector('.lister');
+        console.log(navButton.innerHTML);
+
+        navButton.addEventListener('click', () => {
+            if (navButton.innerHTML == "=") {
+
+                navList.style.display = "flex";
+                navList.style.transition = "0.2s ease-in-out";
+                navButton.innerHTML = "❌";
+                console.log("click")
+            } else {
+                navList.style.transition = "0.2s ease-in-out";
+                navList.style.display = "none";
+                navButton.innerHTML = "=";
+
+            }
+        })
+    </script>
 </body>
 
 </html>
