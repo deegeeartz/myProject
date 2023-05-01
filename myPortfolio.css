@@ -323,6 +323,7 @@ a {
     background-color: black;
     padding: 1% 4%;
     width: 60%;
+    list-style-position: inside;
 }
 
 #aboutlist li span {
@@ -470,7 +471,7 @@ form textarea {
 
 /* media query */
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
     .heading {
         margin: auto;
         display: flex;
@@ -524,6 +525,17 @@ form textarea {
     }
     #intro {
         flex-basis: 100%;
+    }
+    #aboutlist {
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        ;
+    }
+    #aboutlist li {
+        margin: auto;
+        text-indent: 2px;
+        list-style-position: inside;
     }
     .content {
         flex-direction: column-reverse;
