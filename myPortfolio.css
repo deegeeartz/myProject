@@ -507,9 +507,10 @@ form textarea {
     }
     .heading ul {
         display: none;
+        transform-origin: right bottom;
         flex-direction: column;
         justify-content: center;
-        transition: 0.5s ease-in;
+        transition: all 2s ease-in;
     }
     .heading ul li {
         margin: auto;
