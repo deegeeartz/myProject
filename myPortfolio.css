@@ -225,7 +225,7 @@ a {
     overflow-wrap: break-word;
     flex-wrap: wrap;
     /* padding: 0% 80px; */
-    background-color: brown;
+    background-image: linear-gradient(black, grey);
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -357,8 +357,9 @@ a {
 }
 
 #imgcontent2 {
-    margin: 2%;
-    background-color: crimson;
+    margin: auto;
+    background-color: rgb(0, 10, 156);
+    color: aliceblue;
 }
 
 #imgcontent1 img {
@@ -525,4 +526,7 @@ form textarea {
         flex-basis: 100%;
     }
     #resumeId a {}
+    .content {
+        flex-direction: column-reverse;
+    }
 }
