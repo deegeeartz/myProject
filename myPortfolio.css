@@ -478,10 +478,11 @@ form textarea {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        transition: 0.5s ease-in;
     }
     header {
         position: relative;
-        transition: 0.2s ease-in-out;
+        /* transition: 0.2s ease-in-out; */
         background-image: linear-gradient(30deg, rgb(0, 0, 0), rgba(242, 248, 162, 0.486), rgb(122, 161, 247) 50%);
     }
     header button {
@@ -499,7 +500,7 @@ form textarea {
         width: max-content;
         padding: 0px 1%;
         justify-content: center;
-        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     header button:active {
         font-size: small;
@@ -508,7 +509,7 @@ form textarea {
         display: none;
         flex-direction: column;
         justify-content: center;
-        transition: 0.2s ease-in-out;
+        transition: 0.5s ease-in;
     }
     .heading ul li {
         margin: auto;
