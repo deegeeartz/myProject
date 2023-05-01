@@ -470,7 +470,7 @@ form textarea {
 
 /* media query */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:400px) {
     .heading {
         margin: auto;
         display: flex;
@@ -525,7 +525,6 @@ form textarea {
     #intro {
         flex-basis: 100%;
     }
-    #resumeId a {}
     .content {
         flex-direction: column-reverse;
     }
