@@ -7,11 +7,11 @@ navButton.addEventListener('click', () => {
     if (navButton.innerHTML == "=") {
 
         navList.style.display = "flex";
-        navList.style.transition = "0.8s ease-in-out";
+
         navButton.innerHTML = "❌";
         console.log("click")
     } else {
-        navList.style.transition = "0.2s ease-in-out";
+
         navList.style.display = "none";
         navButton.innerHTML = "=";
 

@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 
@@ -475,6 +475,11 @@ form textarea {
     box-shadow: 1px 2px 3px rgb(88, 88, 88);
 }
 
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
 
 /* media query */
 
@@ -486,6 +491,12 @@ form textarea {
         align-items: center;
         justify-content: space-evenly;
         transition: 0.5s ease-in;
+    }
+    header h2 {
+        display: block;
+        text-align: center;
+        margin: auto;
+        font-size: 100%;
     }
     header {
         position: relative;
